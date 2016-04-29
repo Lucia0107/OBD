@@ -1,0 +1,19 @@
+[33mcommit e4d0f4ad4aaf3758e71b01c6b206f36cb228692c[m
+Author: Lucia <chuanhuijian@163.com>
+Date:   Fri Apr 29 14:50:24 2016 +0800
+
+    change end log
+
+[1mdiff --git a/app/src/main/java/com/suziming/senserplayer/activity/DataStreamActivity.java b/app/src/main/java/com/suziming/senserplayer/activity/DataStreamActivity.java[m
+[1mindex 152aaf8..a31ea2a 100644[m
+[1m--- a/app/src/main/java/com/suziming/senserplayer/activity/DataStreamActivity.java[m
+[1m+++ b/app/src/main/java/com/suziming/senserplayer/activity/DataStreamActivity.java[m
+[36m@@ -81,7 +81,7 @@[m [mpublic class DataStreamActivity extends CarManagerActivity {[m
+         dataStreamStop.setOnClickListener(new View.OnClickListener() {[m
+             @Override[m
+             public void onClick(View v) {[m
+[31m-                Toast.makeText(DataStreamActivity.this, "结束测量",Toast.LENGTH_SHORT).show();[m
+[32m+[m[32m                Toast.makeText(DataStreamActivity.this, "结束测量GIT",Toast.LENGTH_SHORT).show();[m
+             }[m
+         });[m
+ [m

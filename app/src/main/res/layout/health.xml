@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back2"
+    >
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:textColor="#0099CC"
+            android:text="请求健康检查" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+        <Button
+            android:id="@+id/healthStart"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="开始检查"/>
+        <Button
+            android:id="@+id/healthStop"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="结束检查"/>
+        <Button
+            android:id="@+id/healthReturn"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="返回"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+        <TableRow
+            android:paddingBottom="3dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp">
+            <TextView
+                android:id="@+id/engine_system_key"
+                android:layout_height="wrap_content"
+                android:text="发动机系统： "/>
+            <TextView
+                android:id="@+id/engine_system"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow
+            android:paddingBottom="3dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp">
+            <TextView
+                android:id="@+id/gear_box_system_key"
+                android:layout_height="wrap_content"
+                android:text="自动变速箱系统： "/>
+            <TextView
+                android:id="@+id/gear_box_system"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow
+            android:paddingBottom="3dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp">
+            <TextView
+                android:id="@+id/brake_system_key"
+                android:layout_height="wrap_content"
+                android:text="刹车系统： "/>
+            <TextView
+                android:id="@+id/brake_system"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow
+            android:paddingBottom="3dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp">
+            <TextView
+                android:id="@+id/air_bag_system_key"
+                android:layout_height="wrap_content"
+                android:text="安全气囊系统： "/>
+            <TextView
+                android:id="@+id/air_bag_system"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
